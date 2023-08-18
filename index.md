@@ -3,13 +3,35 @@ layout: default
 title: Student Blog
 ---
 
-## Luna's Page
+<html>
 
-Go to my [Github account](https://github.com/lunaiwa) !!
+<body>
 
-## Overview of Hacks, Study and Tangibles
-Blogging in GitHub pages is a way to learn and code at the same time. 
+  <div style="display: flex; flex-direction: column; width: 100%; justify-content: center; align-items: center;">
+    <h1 id="typewriter" style="text-align: center;"/>
+  </div>
 
-- Plans, Lists, [Scrum Boards](https://clickup.com/blog/scrum-board/) help you to track key events, show progress and record time.  Effort is a big part of your class grade.  Show plans and time spent!
-- [Hacks(Todo)](https://levelup.gitconnected.com/six-ultimate-daily-hacks-for-every-programmer-60f5f10feae) enable you to stay in focus with key requirements of the class.  Each Hack will produce Tangibles.
-- Tangibles or [Tangible Artifacts](https://en.wikipedia.org/wiki/Artifact_(software_development)) are things you accumulate as a learner and coder. 
+</body>
+
+<script>
+  var i = 0;
+  var txt = "Welcome to Aniket's blog! 😻🤩🤠";
+
+  var speed = 150;
+  function typeWriter(x) {
+
+    if (i <= txt.length) {
+      document.getElementById("typewriter").innerHTML = txt.substring(0, i)
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+
+  }
+
+  typeWriter();
+
+</script>
+
+</html>
+
+Please follow me on [Github](https://github.com/AniCricKet) 😁😁!!
