@@ -2,6 +2,10 @@
 layout: default
 title: Student Blog
 ---
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
 <body>
 
   <div style="display: flex; flex-direction: column; width: 100%; justify-content: center; align-items: center;">
@@ -28,6 +32,7 @@ title: Student Blog
   typeWriter();
 
 </script>
+</head>
 
 <p style="text-align: center;">My name is Aniket. I'm a junior at Del Norte, and am excited to dive into another year of coding! </p>
 
