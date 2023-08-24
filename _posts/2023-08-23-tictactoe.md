@@ -8,23 +8,30 @@ description: A simple Tic Tac Toe game to test blog functionality
 <html>
 <head>
   <style>
-    .board {
-      display: grid;
-      grid-template-columns: repeat(3, 100px);
-      grid-gap: 2px;
-    }
-    .cell {
-      width: 100px;
-      height: 100px;
-      border: 1px solid black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-    }
-  </style>
+  .board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 2px;
+  }
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+</style>
 </head>
 <body>
+<div class="board-container">
   <div class="board" id="board">
     <div class="cell"></div>
     <div class="cell"></div>
@@ -36,6 +43,7 @@ description: A simple Tic Tac Toe game to test blog functionality
     <div class="cell"></div>
     <div class="cell"></div>
   </div>
+</div>
   <script>
     const board = document.getElementById('board');
     const cells = document.querySelectorAll('.cell');
