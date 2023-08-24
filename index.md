@@ -41,7 +41,7 @@ title: Aniket's Mojo Dojo Casa House
 
 One of my favorite hobbies is watching and playing soccer. Here are my three favorite players:  
 
-Lionel Andrés Messi Cuccittini, Neymar da Silva Santos Junior, Pedro Gonzalez   
+Lionel Andrés Messi Cuccittini, Neymar da Silva Santos Junior, and Pedro "Pedri" Gonzalez   
 
 
 ![]({{ site.baseurl }}/images/messisquare.png "Image of Lionel Messi"){: height="300px" width="250px"}.
