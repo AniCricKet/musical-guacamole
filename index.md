@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Student Blog
+title: Aniket's Mojo Dojo Casa House
 ---
 <head>
     <meta charset="UTF-8">
