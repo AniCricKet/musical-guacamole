@@ -1,10 +1,9 @@
 ---
 title: JS Calculator
 comments: true
-hide: true
+toc: true
 layout: default
 description: A common way to become familiar with a language is to build a calculator.  This calculator shows off button with actions.
-toc: true
 ---
 
 <!-- 
@@ -17,7 +16,6 @@ Hack 3: Implement 1 number operation (ie SQRT)
 <!-- 
 HTML implementation of the calculator. 
 -->
-
 
 <!-- 
     Style and Action are aligned with HRML class definitions
