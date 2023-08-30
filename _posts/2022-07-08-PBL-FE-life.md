@@ -1,10 +1,9 @@
 ---
+toc: true
+comments: true
 title: Game of Life
-layout: base
+layout: default
 description: A remix of Conway's game of life using timer, onclick and algorithms.
-permalink: /frontend/life
-image: /images/game_of_life.svg
-tags: [javascript]
 ---
 
 {% include nav_frontend.html %}
