@@ -6,8 +6,6 @@ layout: default
 description: A remix of Conway's game of life using timer, onclick and algorithms.
 ---
 
-{% include nav_frontend.html %}
-
 {% comment %}
 Conway's Game of Life https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 {% endcomment %}

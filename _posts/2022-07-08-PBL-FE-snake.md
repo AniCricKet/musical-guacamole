@@ -5,9 +5,6 @@ title: Classic Snake Game
 layout: default
 description: A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.  
 ---
-
-{% include nav_frontend.html %}
-
 <style>
 
     body{
