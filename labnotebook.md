@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab Notebook
+title: Time Box
 description: My weekly progress and tangibles
 ---
 
