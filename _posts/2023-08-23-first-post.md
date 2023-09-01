@@ -4,6 +4,8 @@ comments: true
 layout: post
 title: First Post
 description: First blog post of CSA!
+type: hacks
+courses: {csa: {week: 0}}
 ---
 
 

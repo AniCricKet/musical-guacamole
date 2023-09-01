@@ -4,6 +4,8 @@ comments: true
 title: Classic Snake Game
 layout: default
 description: A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.  
+type: tangibles
+courses: {csa: {week: 2}}
 ---
 <style>
 

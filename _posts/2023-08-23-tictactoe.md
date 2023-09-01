@@ -5,7 +5,7 @@ layout: post
 title: Tic-Tac-Toe
 description: A simple Tic Tac Toe game to test blog functionality
 type: hacks
-courses: {csa: {week: 0}}
+courses: {csa: {week: 1}}
 ---
 <html>
 <head>

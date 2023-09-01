@@ -4,6 +4,8 @@ comments: true
 title: Game of Life
 layout: default
 description: A remix of Conway's game of life using timer, onclick and algorithms.
+type: tangibles
+courses: {csa: {week: 2}}
 ---
 
 {% comment %}
