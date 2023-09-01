@@ -44,7 +44,6 @@ Load all posts with site
     <th>Week</th>
     <th>Plans</th>
     <th>Hacks</th>
-    <th>Tangibles</th>
   </tr>
 
   {%comment%} 
@@ -62,8 +61,6 @@ Load all posts with site
   {% for index in (start..end) -%}
     {% assign plans = null | compact %}
     {% assign hacks = null | compact %}
-    {% assign tangibles = null | compact %}
-
 
   {%comment%} 
   <!-- looping through all posts -->
@@ -77,9 +74,9 @@ Load all posts with site
         {% assign week = post.courses[page.course].week | tangibles: 0 %}
         {% assign title = post.title | compact %}
         {% assign url = post.url | compact %}
-  
+
   {%comment%} 
-  <!-- process posts for current week -->
+  <!-- process posts for the current week -->
   {%endcomment%}
         {% if week == index %} 
 
@@ -92,9 +89,6 @@ Load all posts with site
           {% elsif post.type == "hacks" %}
               {% assign hacks = hacks | unshift: title %}
               {% assign hacks = hacks | unshift: url %} 
-          {% elsif post.type == "tangibles" %}
-              {% assign tangibles = tangibles | unshift: title %}
-              {% assign tangibles = tangibles | unshift: url %} 
           {% else %}
               {% assign uk = uk | unshift: title %}
               {% assign uk = uk | unshift: url %}     
@@ -107,10 +101,10 @@ Load all posts with site
   {%comment%} 
   <!-- ordering units and inserting column delimiters -->
   {%endcomment%}
-  {% assign units = units | concat:plans | concat:deli | concat:hacks | concat:deli | concat:tangibles  %}
+  {% assign units = units | concat:plans | concat:deli | concat:hacks  %}
 
   {%comment%} 
-  <!-- This Loop is maximum iterationss, since elements are pairs it will decrement a extra times at the end -->
+  <!-- This Loop is maximum iterations, since elements are pairs it will decrement an extra time at the end -->
   {%endcomment%}
   <tr>
   <td> {{ index }} </td> 
@@ -118,7 +112,7 @@ Load all posts with site
   {% for i in (0..units.size) -%} 
     {% if units.size == 0 %}
       {% break %}
-    {% elsif units[0] == sym %} <!-- make new column -->
+    {% elsif units[0] == sym %} <!-- make a new column -->
   </td>
   <td>
       {% assign units = units | shift %} <!-- remove delimiter -->
