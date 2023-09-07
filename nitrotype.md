@@ -5,7 +5,7 @@ layout: post
 title: Nitro Type
 permalink: /nitrotype/
 courses: {csa: {week: 3} }
-type: tangibles
+type: hacks
 ---
 <html>
 <head>
