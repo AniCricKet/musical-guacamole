@@ -7,7 +7,6 @@ permalink: /nitrotype/
 courses: {csa: {week: 3} }
 type: tangibles
 ---
-
 <html>
 <head>
   <style>
@@ -32,6 +31,10 @@ type: tangibles
       font-size: 18px;
       margin-top: 20px;
     }
+    #result {
+      font-size: 18px;
+      margin-top: 20px;
+    }
     .result {
       border-radius: 12px;
       border: 1px solid black;
@@ -51,6 +54,7 @@ type: tangibles
     <p id="paragraph-display">Start typing...</p>
     <textarea id="input-field" rows="4"></textarea>
     <p id="timer"></p>
+    <p id="result"></p>
   </div>
 
   <script>
@@ -74,8 +78,8 @@ type: tangibles
     // This uses the random integer from above as an index for a random paragraph from the paragraph bank
     var currentParagraph = paragraphs[currentParagraphIndex];
 
-    // Track the current word index within the paragraph
-    var currentWordIndex = 0;
+    // Track the current character index within the paragraph
+    var currentCharIndex = 0;
 
     // This sets the startTime and the timerInterval to undefined values
     var startTime = null;
@@ -87,9 +91,8 @@ type: tangibles
     var inputField = document.getElementById("input-field");
     // This is the code that allows the timer to update
     var timer = document.getElementById("timer");
-
-    // This displays the random paragraph
-    paragraphDisplay.textContent = currentParagraph;
+    // Result element for displaying WPM and accuracy
+    var resultElement = document.getElementById("result");
 
     // Function starts as soon as it detects an input
     inputField.addEventListener("input", function(event) {
@@ -102,6 +105,21 @@ type: tangibles
       }
 
       // Verify if the entered text matches the current paragraph
+      var paragraphText = currentParagraph.slice(0, enteredText.length);
+
+      // Check each character and apply highlighting
+      var highlightedText = '';
+      for (var i = 0; i < enteredText.length; i++) {
+        if (enteredText[i] === paragraphText[i]) {
+          highlightedText += '<span style="background-color: yellow;">' + enteredText[i] + '</span>';
+        } else {
+          highlightedText += enteredText[i];
+        }
+      }
+
+      paragraphDisplay.innerHTML = highlightedText + currentParagraph.slice(enteredText.length);
+
+      // If the entered text matches the entire paragraph
       if (enteredText === currentParagraph) {
         // Display a "You Win!" message
         paragraphDisplay.textContent = "You Win!";
@@ -122,9 +140,20 @@ type: tangibles
       // Makes the action above (timer) stop
       clearInterval(timerInterval);
 
+      // Calculate WPM and accuracy
+      var currentTime = new Date();
+      var elapsedTime = (currentTime - startTime) / 1000; // in seconds
+      var wordCount = currentParagraph.split(" ").length;
+      var typedCharacters = inputField.value.length;
+      var accuracy = (typedCharacters / currentParagraph.length) * 100;
+      var wpm = (wordCount / (elapsedTime / 60)).toFixed(2); // words per minute
+
+      // Display results
+      resultElement.textContent = "Accuracy: " + accuracy.toFixed(2) + "% | WPM: " + wpm;
+      
       // Waits 1 second after the game is complete. Then it asks for the user's name.
       setTimeout(()=> {
-         var username = prompt('Congratulations! You completed the paragraph in ' + actualTime + ' seconds! Enter your name:');
+         var username = prompt('Congratulations! You completed the paragraph in ' + elapsedTime.toFixed(2) + ' seconds! Enter your name:');
          // Save or process the username as needed
          // Then reload the page
          location.reload();
