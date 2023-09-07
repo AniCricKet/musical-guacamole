@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Tic-Tac-Toe
 description: A simple Tic Tac Toe game to test blog functionality
-type: hacks
+type: tangibles
 courses: {csa: {week: 1}}
 ---
 <html>
