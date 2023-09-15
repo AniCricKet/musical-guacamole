@@ -47,3 +47,7 @@ Lionel Andrés Messi Cuccittini, Neymar da Silva Santos Junior, and Pedro "Pedri
 ![]({{ site.baseurl }}/images/messisquare.png "Image of Lionel Messi"){: height="300px" width="250px"}.
 ![]({{ site.baseurl }}/images/neymarsquareGIF.gif "GIF of Neymar Jr"){: height="300px" width="250px"}.
 ![]({{ site.baseurl }}/images/pedrisquare.jpeg "Image of Pedri"){: height="300px" width="250px"}.
+
+<p style="text-align: center;">Here is my Scrum Table for Equipo de No Papeles</p>
+
+![Scrum Manifesto](/musical-guacamole/images/ScrumTable.png "Scrum Manifesto")
