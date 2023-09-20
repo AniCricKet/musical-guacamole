@@ -8,52 +8,9 @@ type: tangibles
 courses: {csa: {week: 5}}
 ---
 
-# Notes
-
-- the panelists were a mechanical engineering major, computer science major, cognitive science/machine learning major, and a environmental analysis major
-- ap computer science knowledge helped succeed in college classes
-- being exposed to linux, scripting, and powershell helped with an autonomous robotics class
-- csa and csp teach valuable web dev skills which are useful in the workplace
-- knowing how to use things like github, agile manifesto, scrum teams is very helpful
-- topics in this class are very fundamental for other into level courses in college
-- when applying for college, it's important to consider if it's a lottery or not (example: ucsd is a lottery for cs major), just apply to as many colleges as possible because there's no guarantee you'll get in anywhere
-- cs is kinda hard to switch into, but cognitive science is also a good alternative along with data science
-- working a job like Codeninjas or any extracurricular where u show a strong understanding of college (preferably a teaching position)
-- putting your resume out there to family friends or on websites like indeed is good to find a job/internship opportunity
-- references from people that work at the company look really good
-- don't get discouraged if you don't get internships, it's very hard to get them 
-- if your showing some kind of project you worked on during an application or an interview, it's better to show how it helped them overall 
-- 2 of them interned at Northrupp Grumann
-- knowledge from things like cyber patriot and having leadership from things like robotics is good to get internships like this
-- you need to know which extracurricular is helpful and will benefit you and your application
-- building a project during school is very impressive and is pretty doable
-- these projects are really good if you want to apply for a computer science major or something related to that
-- start with simple ideas because then you can show off a large amount of projects
-- this project doesnt have to be something crazy, can be building off something that already exists like Uber
-- Hyperplexed is a good youtube channel to see how to redesign big websites
-- Learn how to use UI tools like Figma to make frontend as well
-- AI tools like chatgpt can help build projects but don't be overreliant on them because they don't always work for all checked scenarios, but its good for exact errors
-- deploy your projects online (like vercel or sum) so people can see it online
-- having tangible projects to show impresses employers and gives them an idea of what kind of person you are
-- keep some kind of a portfolio or an individual website linked to your linkedin
-- on these websites have 3d models or things that you create which demonstrate computer knowledge
-- also show lessons learned and maybe projects which are still in progress and what is the problem
-- one of the panelists suggested doing thinks like leet code problems and knowing how to understand/tackle them over building a project during a school year, as these things are also helpful for internships and jobs
-- a lot of jobs have an in-person coding assesment where u have to code a certain thing on the spot, so these things are really helpful
-
-# Cheat codes:
-tools to use if you're serious about publishing projects and building a strong portfolio
-- Vercel: deploying tool for projects
-- SvelteKit: web-development framework
-- Tailwind CSS: frontend tool to customize styling easily
-- just search up top 10 tools for a coding portfolio
-- Personal website: buy a cheap domain for your own personal website and put your resume & projects on there
-- Website should display lots of technical skills, as thats what employers are looking for (content doesn't matter)
-- Picking up and understanding these tools while theyre still new is very impressive and puts you ahead of others
-- however you should still focus on the fundamentals and make sure you understand the tools we use in class before you start working on these things
-
-
-
 # Takeaways
 
+The notes from the panel of former high school students highlighted a few key points about how AP Computer Science can be helpful in college and offered valuable advice. One big takeaway is that the basics learned in AP Computer Science are valuable in college, no matter what major you choose. These skills, like problem-solving and coding, are useful in various college courses and projects. They also mentioned practical things like using Linux, scripting, and web development skills learned in AP CS, which came in handy in specific college classes like autonomous robotics.The panelists also stressed the importance of knowing tools like GitHub and Agile Manifesto and understanding concepts like Scrum teams. These are useful in real-world work settings, and learning them early can give you an advantage. They advised applying to many colleges because some programs, like computer science, can be competitive, and there are no guarantees. They also mentioned alternative majors like cognitive science and data science if computer science is tough to get into. They recommended getting involved in extracurricular activities that demonstrate your understanding of college work, like teaching positions or internships. Finally, they highlighted the importance of building projects, even simple ones, and putting them online, as this impresses potential employers and helps you stand out. It's also a good idea to create a personal website to showcase your skills and ongoing projects. 
 
+# Reflection
+Reflecting on these insights, I can see the importance of not only mastering the fundamental concepts of computer science but also staying attuned to emerging tools and technologies. The "cheat codes" mentioned, such as deploying projects with Vercel, using web development frameworks like SvelteKit, and tailoring frontend design with Tailwind CSS, provide a clear direction for enhancing a personal portfolio and making it stand out to potential employers. Moreover, creating a personal website that showcases technical skills and ongoing projects is a tangible way to demonstrate proficiency and commitment to the field. Looking ahead, I definitely want to make a personal website and host it online so I can show my personal resume and projects when applying for both internships and colleges. This website doesn't need to have the best content, as employers are more interested in technical skills. Furthermore, the panel's advice on problem-solving through platforms like LeetCode and preparing for in-person coding assessments serves as a reminder that technical skills must be coupled with problem-solving abilities for success in the job market. Overall, the panel's insights inspire me to continue building a strong foundation in computer science while actively exploring and mastering the tools and concepts that can set me apart in a competitive field.
