@@ -42,3 +42,8 @@ Grade: 0.95/1
 - Had the collegeboard scoring guidelines
 
 Grade: 0.9/1
+
+### Advice from Crossover team:
+
+- Talk less about the specific FRQ question and talk more about how to tackle the general type of array questions / what kinds of things u need
+- Keep an eye on time when talking 
