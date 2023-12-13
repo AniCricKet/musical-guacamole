@@ -1,0 +1,48 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    color: $primary-color;
+}
+
+.joke {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+    background-color: $secondary-color;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
