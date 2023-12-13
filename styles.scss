@@ -1,9 +1,9 @@
-$primary-color: #3498db;
+$primary-color: #e74c3c;
 $secondary-color: #2ecc71;
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ecf0f1;
+    background-color: #f2f2f2;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -17,32 +17,42 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
 }
 
 h1 {
     color: $primary-color;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .joke {
     margin: 20px 0;
-    padding: 10px;
-    border: 1px solid $secondary-color;
-    border-radius: 4px;
+    padding: 15px;
+    border: 2px solid $secondary-color;
+    border-radius: 8px;
     background-color: $secondary-color;
     color: #fff;
+    font-size: 1.2em;
+    line-height: 1.4;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 24px;
+    font-size: 1.2em;
     background-color: $primary-color;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
         background-color: darken($primary-color, 10%);
+        transform: scale(1.05);
     }
 }
