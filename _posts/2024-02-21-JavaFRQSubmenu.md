@@ -29,16 +29,17 @@ permalink: /2015frqs
       padding: 10px;
       text-align: center;
       position: relative;
+      overflow: hidden; /* Ensure magnifying glass stays within the table */
     }
     .magnifying-glass {
-      width: 300px; /* Adjust the magnifying glass size */
-      height: 300px; /* Adjust the magnifying glass size */
+      width: 300px;
+      height: 300px;
       position: absolute;
       border: 2px solid #000;
       border-radius: 50%;
       display: none;
       pointer-events: none;
-      background-size: 300% 300%;
+      background-size: 800% 800%; /* Adjust background size for better display */
     }
     .image-container:hover .magnifying-glass {
       display: block;
@@ -86,13 +87,13 @@ permalink: /2015frqs
         const rect = container.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-        const backgroundX = (x / container.offsetWidth) * 300;
-        const backgroundY = (y / container.offsetHeight) * 300;
+        const backgroundX = (x / container.offsetWidth) * 800; /* Adjust background size for better display */
+        const backgroundY = (y / container.offsetHeight) * 800; /* Adjust background size for better display */
         const imageUrl = container.querySelector('img').src;
         glass.style.backgroundImage = `url('${imageUrl}')`;
         glass.style.backgroundPosition = `-${backgroundX}px -${backgroundY}px`;
-        glass.style.left = x - glass.offsetWidth / 2 + 'px';
-        glass.style.top = y - glass.offsetHeight / 2 + 'px';
+        glass.style.left = Math.min(Math.max(x - glass.offsetWidth / 2, 0), container.offsetWidth - glass.offsetWidth) + 'px';
+        glass.style.top = Math.min(Math.max(y - glass.offsetHeight / 2, 0), container.offsetHeight - glass.offsetHeight) + 'px';
       });
     });
   });
