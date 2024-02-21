@@ -39,7 +39,6 @@ permalink: /2015frqs
       display: none;
       pointer-events: none;
       background-size: 300% 300%;
-      background-image: url('https://github.com/AniCricKet/musical-guacamole/raw/main/assets/91163802/6ab92a3e-70c1-4603-86e1-9c99439aa0b3.png');
     }
     .image-container:hover .magnifying-glass {
       display: block;
@@ -58,21 +57,22 @@ permalink: /2015frqs
   <tr>
     <td class="image-container">
       <div class="magnifying-glass"></div>
-      <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/6ab92a3e-70c1-4603-86e1-9c99439aa0b3" alt="Question 2">
+      <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/66316650-70ff-497f-919b-ba3d4e6a2a87" alt="Question 2">
     </td>
     <td>Question 2</td>
   </tr>
   <tr>
     <td class="image-container">
       <div class="magnifying-glass"></div>
-      <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/6ab92a3e-70c1-4603-86e1-9c99439aa0b3" alt="Question 3">
+      <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/8b25b143-c55a-47b1-ae2f-204ebb653575" alt="Question 3">
+      <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/41b0d997-e69f-4743-bd69-96754d7ae029" alt="Question 3">
     </td>
     <td>Question 3</td>
   </tr>
   <tr>
    <td class="image-container">
       <div class="magnifying-glass"></div>
-      <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/6ab92a3e-70c1-4603-86e1-9c99439aa0b3" alt="Question 4">
+      <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/768d86c6-5a88-442c-bc90-a75976076308" alt="Question 4">
     </td>
     <td>Question 4</td>
   </tr>
@@ -86,9 +86,11 @@ permalink: /2015frqs
         const rect = container.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-        const backgroundX = (x / container.offsetWidth) * 100;
-        const backgroundY = (y / container.offsetHeight) * 100;
-        glass.style.backgroundPosition = `${backgroundX}% ${backgroundY}%`;
+        const backgroundX = (x / container.offsetWidth) * 300;
+        const backgroundY = (y / container.offsetHeight) * 300;
+        const imageUrl = container.querySelector('img').src;
+        glass.style.backgroundImage = `url('${imageUrl}')`;
+        glass.style.backgroundPosition = `-${backgroundX}px -${backgroundY}px`;
         glass.style.left = x - glass.offsetWidth / 2 + 'px';
         glass.style.top = y - glass.offsetHeight / 2 + 'px';
       });
