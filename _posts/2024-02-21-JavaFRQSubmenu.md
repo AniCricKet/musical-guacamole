@@ -31,8 +31,8 @@ permalink: /2015frqs
       position: relative;
     }
     .magnifying-glass {
-      width: 50px;
-      height: 50px;
+      width: 300px; /* Adjust the magnifying glass size */
+      height: 300px; /* Adjust the magnifying glass size */
       position: absolute;
       border: 2px solid #000;
       border-radius: 50%;
