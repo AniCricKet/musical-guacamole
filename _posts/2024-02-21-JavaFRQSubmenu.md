@@ -79,25 +79,19 @@ permalink: /2015frqs
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    document.addEventListener('mousemove', function (e) {
-      document.querySelectorAll('.image-container').forEach(function (container) {
+    document.querySelectorAll('.image-container').forEach(function (container) {
+      container.addEventListener('mousemove', function (e) {
         const glass = container.querySelector('.magnifying-glass');
         const rect = container.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-
-        if (x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom) {
-          const backgroundX = (x / container.offsetWidth) * 800; /* Adjust background size for better display */
-          const backgroundY = (y / container.offsetHeight) * 800; /* Adjust background size for better display */
-          const imageUrl = container.querySelector('img').src;
-          glass.style.backgroundImage = `url('${imageUrl}')`;
-          glass.style.backgroundPosition = `-${backgroundX}px -${backgroundY}px`;
-          glass.style.left = Math.min(Math.max(x - glass.offsetWidth / 2, 0), container.offsetWidth - glass.offsetWidth) + 'px';
-          glass.style.top = Math.min(Math.max(y - glass.offsetHeight / 2, 0), container.offsetHeight - glass.offsetHeight) + 'px';
-          glass.style.display = 'block';
-        } else {
-          glass.style.display = 'none';
-        }
+        const backgroundX = (x / container.offsetWidth) * 800; /* Adjust background size for better display */
+        const backgroundY = (y / container.offsetHeight) * 800; /* Adjust background size for better display */
+        const imageUrl = container.querySelector('img').src;
+        glass.style.backgroundImage = `url('${imageUrl}')`;
+        glass.style.backgroundPosition = `-${backgroundX}px -${backgroundY}px`;
+        glass.style.left = Math.min(Math.max(x - glass.offsetWidth / 2, 0), container.offsetWidth - glass.offsetWidth) + 'px';
+        glass.style.top = Math.min(Math.max(y - glass.offsetHeight / 2, 0), container.offsetHeight - glass.offsetHeight) + 'px';
       });
     });
   });
