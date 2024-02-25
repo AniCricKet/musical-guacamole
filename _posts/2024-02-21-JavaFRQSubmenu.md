@@ -52,29 +52,28 @@ permalink: /2015frqs
       <div class="magnifying-glass"></div>
       <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/6ab92a3e-70c1-4603-86e1-9c99439aa0b3" alt="Question 1">
     </td>
-    <td>Link to external site </td>
+    <td><a href="https://anicricket.github.io/musical-guacamole/2015frq1">Question 1</a></td>
   </tr>
   <tr>
     <td class="image-container">
       <div class="magnifying-glass"></div>
       <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/66316650-70ff-497f-919b-ba3d4e6a2a87" alt="Question 2">
     </td>
-    <td>Link to external site </td>
+    <td><a href="https://anicricket.github.io/musical-guacamole/2015frq2">Question 2</a></td>
   </tr>
   <tr>
     <td class="image-container">
       <div class="magnifying-glass"></div>
       <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/8b25b143-c55a-47b1-ae2f-204ebb653575" alt="Question 3">
-      <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/41b0d997-e69f-4743-bd69-96754d7ae029" alt="Question 3">
     </td>
-    <td>Link to external site </td>
+    <td><a href="https://anicricket.github.io/musical-guacamole/2015frq3">Question 3</a></td>
   </tr>
   <tr>
    <td class="image-container">
       <div class="magnifying-glass"></div>
       <img src="https://github.com/AniCricKet/musical-guacamole/assets/91163802/768d86c6-5a88-442c-bc90-a75976076308" alt="Question 4">
     </td>
-    <td>Link to external site </td>
+    <td><a href="https://anicricket.github.io/musical-guacamole/2015frq4">Question 4</a></td>
   </tr>
 </table>
 
