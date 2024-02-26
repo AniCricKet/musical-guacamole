@@ -46,6 +46,7 @@ permalink: /2015frqs
   </style>
 </head>
 <body>
+<p>Note: I was trying to get a magnifying glass type effect on hover in order to improve image readability, but it doesn't work as well as I intended</p>
 <table>
   <tr>
     <td class="image-container">
