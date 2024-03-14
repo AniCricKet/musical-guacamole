@@ -39,7 +39,7 @@ title: Aniket's Mojo Dojo Casa House
 
 ![About Me](/musical-guacamole/images/aboutmethingy.png "About Me")
 
-One of my favorite hobbies is watching and playing soccer. Here are my three favorite players:  
+One of my favorite hobbies is watching and <span style="position: relative; display: inline-block;"><a href="https://anicricket.github.io/musical-guacamole/games" style="color: transparent; text-decoration: none; position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 1;">playing</a><span style="z-index: 0;">playing</span></span> soccer. Here are my three favorite players:
 
 Lionel Andrés Messi Cuccittini, Neymar da Silva Santos Junior, and Pedro "Pedri" Gonzalez   
 
