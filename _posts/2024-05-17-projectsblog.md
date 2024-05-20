@@ -9,16 +9,9 @@ courses: { csa: {week: 37} }
 permalink: /projectshowcase
 ---
 
-### **Blog Post Structure**
+#### Showcase of My Projects
 
-#### **Title:**
-- **"Showcase of My Projects"**
-
-#### **Introduction:**
-- **Brief Overview:** A short paragraph introducing yourself and the purpose of the post. Mention the variety and scope of your projects.
-  ```
-  Welcome to my project showcase! Here, you’ll find a collection of my recent work, each accompanied by a short video demo. I hope you find these projects as exciting and innovative as I do.
-  ```
+Welcome to my project showcase! Here, you’ll find a collection of my recent work, each accompanied by a short video demo. I hope you find these projects as exciting and innovative as I do.
 
 #### **Project Sections:**
 For each project, follow a consistent format. This helps in maintaining a clean and organized look.
