@@ -26,7 +26,7 @@ A Hangman game to help students study computer science terms in an engaging mann
 - **Video Demo:**
 - 
   <video width="640" height="360" controls>
-			<source src="_posts/videos/lyntax.mp4" type="video/mp4">
+			<source src="/videos/lyntax.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 	</video>
 
